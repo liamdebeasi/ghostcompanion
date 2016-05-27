@@ -1,5 +1,8 @@
 {
-  "name": "",
-  "version": "",
-  "description": "Code for ghostcompanion.com"
+  "name": "ghost-companion-app",
+  "description": "Ghost Companion Website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liamdebeasi/ghostcompanion.git"
+  }
 }
