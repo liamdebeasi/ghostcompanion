@@ -1,0 +1,386 @@
+body {
+    background-color: #181e27 !important;
+}
+
+.container-fluid {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Avenir Next";
+}
+
+header {
+    width: 100%;
+    height: 75vh;
+    min-height: 550px;
+    max-height: 700px;
+    background-image: url('../images/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-top: -80px;
+} 
+
+.trans {
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0,0,0,0.8);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.nav h1 {
+    font-family: "Avenir Next";
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-indent: 30px;
+    line-height: 60px;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a:link, a:visited, a:focus {
+    color: #fff !important;
+    text-decoration: none !important; 
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0 35px 0 20px;
+    line-height: 60px;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+#header-content {
+    position: relative;
+    top: 43%;
+    transform: translateY(-43%);
+}
+
+.logo {
+    width: 300px;
+    height: 128px;
+    text-align: center;
+    font-size: 50px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 0 auto;
+    line-height: 375px;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.appstore {
+    margin: 0 auto;
+    width: 375px;
+    margin-top: 150px;
+}
+
+.ios {
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    background-image: url('../images/ios.svg');
+    background-size: contain;  
+    background-repeat: no-repeat;
+}
+
+.android {
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    background-image: url('../images/googleplay.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+}
+
+.row {
+    width: 100%;
+    margin: 0 !important;
+}
+
+.row h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.row p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 35px;
+    font-weight: 200;
+}
+
+.row .text {
+    transform: translateY(50%);
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.row .center {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+
+.row .center p {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.row .appstore {
+    margin: 0;
+    width: 350px;
+}
+
+.faq {
+    margin: 0 auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    max-width: 85%;
+    font-size: 15px;
+    line-height: 24px;
+    padding-top: 25px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.faq h1 {
+    font-size: 32px;
+    text-transform: none;
+}
+
+.faq a:link, .faq a:visited {
+    color: #fff;
+    line-height: inherit;
+    padding: 0px !important;
+    font-weight: 600;
+}
+
+.question {
+    margin-bottom: 50px;
+}
+
+.question h1 {
+    font-size: 24px;
+    line-height: 33px;
+}
+
+.even {
+    background-color: #12151d;
+}
+
+.phone {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin: 50px 0 50px 0;
+}
+
+#main {
+    background-image: url('../images/main.png');
+}
+
+#event-details {
+    background-image: url('../images/event-details.png');
+}
+
+#tracked {
+    background-image: url('../images/tracked.png');
+}
+
+#near-me {
+    background-image: url('../images/near-me.png');
+}
+
+#main-front {
+    background-image: url('../images/main-front.png');
+}
+
+footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0 20px 0;
+}
+
+#legal {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0 auto;
+    width: 60%;
+}
+
+@media (max-width: 991px) {
+    .row {
+        padding: 0;
+    }
+    .row .text {
+        width: 90%;
+        margin: 0 auto;
+        margin: 0 50px 0 50px;
+    }
+    .phone {
+        width: 50%;
+        float: none !important;
+        margin: 0 auto;
+        margin-top: 150px;
+        margin-bottom: 50px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .row h1 {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .phone {
+        width: 90%;
+        margin-top: 125px;
+    }
+    .row .right, .row .left {
+        float: none !important;
+    }
+    .row .text {
+        width: 80%;
+        margin: 0 auto;
+        transform: translateY(25%) !important;
+    }
+    
+    .center h1 {
+        width: 80%;
+    }
+    
+    .text .ios, .text .android {
+        width: 160px;
+    }
+    
+    .text .ios {
+        float: left !important;
+    }
+    
+    .text .android {
+        float: right !important;
+    }
+    
+    .row .faq {
+        max-width: 90%;
+        margin: 0 10px 0 10px;
+    }
+    
+    #legal {
+        width: 90%;
+    }
+    
+    
+}
+
+
+@media (max-width: 600px) {
+    
+    .nav {
+        height: 50px !important;
+        
+    }
+
+    .nav h1 {
+        font-size: 15px !important;
+        line-height: 50px !important;
+        text-indent: 20px;
+    }
+    
+    .nav a {
+        display: none;
+    }
+    
+    .row {
+        padding: 25px 0 25px 0;
+    }
+    
+    
+    #header-content {
+        top: 33%;
+        transform: none;
+    }
+    
+    header {
+        height: 100vh;
+    }
+    
+    .row p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    
+    .row .text {
+        transform: translateY(5%) !important;
+    }
+    
+    .phone {
+        margin-top: 50px;
+    }
+    
+    h1 {
+        font-weight: 600 !important;
+        font-size: 20px !important;
+        line-height: 30px !important;
+    }
+    
+    .appstore {
+        margin-top: 100px;
+        width: auto !important;
+    }
+    
+    .ios, .android {
+        width: 150px;
+    }
+    
+    .ios.left, .android.right {
+        float: none !important; 
+    }
+    
+    .ios, .android {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        height: 100px;
+        line-height: 300px;
+        font-size: 30px;
+    }
+}
